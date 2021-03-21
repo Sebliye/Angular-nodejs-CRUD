@@ -13,7 +13,11 @@ const students=[
 //app.use(bodyParser.urlencoded({extended:false}))
 
 //json() is to covert the json to javascript object
+
 app.use(bodyParser.json())
+
+
+
 //get
 app.get('/',(req,res,next)=>{
 res.send(students)
@@ -44,7 +48,6 @@ app.delete('/student/:index',(req,res)=>{
      students.splice(req.params.index,1);
      res.send(students);
      console.log(students)
-
 })
 
 
