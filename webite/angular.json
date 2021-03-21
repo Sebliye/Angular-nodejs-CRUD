@@ -88,9 +88,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootsrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootsrap/dist/css/bootstrap.min.css",
+               "node_modules/popper/umd/popper.min.js"
+            ]
           }
         },
         "lint": {
